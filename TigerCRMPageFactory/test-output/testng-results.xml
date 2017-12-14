@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41412" started-at="2017-12-14T12:08:28Z" finished-at="2017-12-14T12:09:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41412" started-at="2017-12-14T12:08:28Z" finished-at="2017-12-14T12:09:09Z">
+      <class name="com.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="initextent()[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="initextent" is-config="true" duration-ms="276" started-at="2017-12-14T17:38:27Z" finished-at="2017-12-14T17:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initextent -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="init" is-config="true" duration-ms="27414" started-at="2017-12-14T17:38:28Z" finished-at="2017-12-14T17:38:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initExtent(java.lang.reflect.Method)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="initExtent" is-config="true" duration-ms="5" started-at="2017-12-14T17:38:55Z" finished-at="2017-12-14T17:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.testcases.LoginPageTest.loginTitleValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtent -->
+        <test-method status="PASS" signature="loginTitleValidation()[pri:1, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="loginTitleValidation" duration-ms="25" started-at="2017-12-14T17:38:55Z" finished-at="2017-12-14T17:38:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTitleValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="getResult" is-config="true" duration-ms="18" started-at="2017-12-14T17:38:55Z" finished-at="2017-12-14T17:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTitleValidation status=SUCCESS method=LoginPageTest.loginTitleValidation()[pri:1, instance:com.qa.testcases.LoginPageTest@55f3ddb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="initExtent(java.lang.reflect.Method)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="initExtent" is-config="true" duration-ms="0" started-at="2017-12-14T17:38:55Z" finished-at="2017-12-14T17:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.testcases.LoginPageTest.loginPageTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtent -->
+        <test-method status="PASS" signature="loginPageTest()[pri:2, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="loginPageTest" duration-ms="13023" started-at="2017-12-14T17:38:55Z" finished-at="2017-12-14T17:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-14T17:39:08Z" finished-at="2017-12-14T17:39:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTest status=SUCCESS method=LoginPageTest.loginPageTest()[pri:2, instance:com.qa.testcases.LoginPageTest@55f3ddb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="initExtent(java.lang.reflect.Method)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="initExtent" is-config="true" duration-ms="0" started-at="2017-12-14T17:39:08Z" finished-at="2017-12-14T17:39:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.testcases.LoginPageTest.homePagetitleValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtent -->
+        <test-method status="PASS" signature="homePagetitleValidation()[pri:3, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="homePagetitleValidation" duration-ms="325" started-at="2017-12-14T17:39:08Z" finished-at="2017-12-14T17:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePagetitleValidation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="getResult" is-config="true" duration-ms="2" started-at="2017-12-14T17:39:09Z" finished-at="2017-12-14T17:39:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePagetitleValidation status=SUCCESS method=LoginPageTest.homePagetitleValidation()[pri:3, instance:com.qa.testcases.LoginPageTest@55f3ddb1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@55f3ddb1]" name="tearDown" is-config="true" duration-ms="538" started-at="2017-12-14T17:39:09Z" finished-at="2017-12-14T17:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
