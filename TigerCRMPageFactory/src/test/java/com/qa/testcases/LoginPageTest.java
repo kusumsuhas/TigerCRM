@@ -27,6 +27,7 @@ public class LoginPageTest extends MasterClass {
 	public void loginTitleValidation(){
 		log.info("LoginPage Title Validation");
 		Assert.assertEquals(driver.getTitle(), "vtiger CRM 5 - Commercial Open Source CRM", "LoginPage Title not matched");
+		log.info("LoginPage Title Validated"); //Added By Java
 	}
 	
 	@Test (priority=2)
