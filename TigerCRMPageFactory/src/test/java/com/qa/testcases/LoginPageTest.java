@@ -37,6 +37,7 @@ public class LoginPageTest extends MasterClass {
 	public void homePagetitleValidation() {
 		Assert.assertEquals(driver.getTitle(), "Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM", "HomePage title not matched");
 		log.info("HomePage title valided");
+		
 	}
 	
 	@AfterClass
