@@ -16,6 +16,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -36,6 +38,7 @@ public class MasterClass {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	public static Logger log = Logger.getLogger(MasterClass.class.getName());
 
 	public void loadProperties() {
 		try {
@@ -68,11 +71,14 @@ public class MasterClass {
 			File pathBinary=new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 			//driver = new FirefoxDriver();
 		}
+		log.info(browserName+" is selected");
 	}
 	
 	public void browserInitialisation() {
 		loadProperties();
+		log.info("Properties are loaded.");
 		selectBrowser();
+		log.info("Browser loaded");
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().pageLoadTimeout(CommonUtil.PAGELOAD_TIMEOUT, TimeUnit.SECONDS);		
@@ -81,12 +87,14 @@ public class MasterClass {
 	
 	@BeforeSuite
 	public void initextent() {
-		System.out.println("Extent REports iniated");
-		htmlReporter = new ExtentHtmlReporter("E:\\Temp Eclipse Repository\\TigerCRMPageFactory\\test-output\\TigerCRMTestReport.html");
 		
+		String logConfigPath="E:\\Git Repository\\TigerCRMPageFactory\\Log4J.properties";
+		PropertyConfigurator.configure(logConfigPath);
+		
+		htmlReporter = new ExtentHtmlReporter("E:\\Temp Eclipse Repository\\TigerCRMPageFactory\\test-output\\TigerCRMTestReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		System.out.println("Report created");
+		
 		
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setDocumentTitle("Automation Report");
