@@ -18,7 +18,9 @@ public class LoginPageTest extends MasterClass {
 	public void init() {
 		browserInitialisation();
 		loginPage = new LoginPage();
+
 		//Added by Temp 
+
 	}
 	
 	@Test (priority=1)
