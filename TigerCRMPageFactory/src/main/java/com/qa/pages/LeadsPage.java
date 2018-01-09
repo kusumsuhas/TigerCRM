@@ -55,9 +55,10 @@ public class LeadsPage extends MasterClass{
 		String finalXpath="";
 		//table[@class='lvt small']/tbody/tr[3]/td[2]
 		
-		for( int i=3; i<=noOfRows; i++) {
-			for(int j =1; j<=noOfCols; j++) {
+		for( int i=2; i<=noOfRows; i++) {
+			for(int j =1; j<=8; j++) {
 				finalXpath=firstxpath+i+secondXpath+j+"]";
+				System.out.println(finalXpath);
 				System.out.print(driver.findElement(By.xpath(finalXpath)).getText()+" ! ");
 			}
 			System.out.println("");
