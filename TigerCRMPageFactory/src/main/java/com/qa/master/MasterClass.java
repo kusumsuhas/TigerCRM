@@ -102,6 +102,11 @@ public class MasterClass {
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTheme(Theme.STANDARD);
 	}
+
+	@BeforeMethod()
+	public void initExtent(Method method) {
+		test= extent.createTest(method.getName());
+	}
 	
 	@AfterMethod() 
 	public void getResult(ITestResult result) {
@@ -116,8 +121,5 @@ public class MasterClass {
 		}
 	}
 	
-	@BeforeMethod()
-	public void initExtent(Method method) {
-		test= extent.createTest(method.getName());
-	}
+
 }
